@@ -17,7 +17,6 @@ import logo from "../assets/logo.svg";
 import home from "../assets/cottage.svg";
 
 const drawerWidth = 231;
-const drawerHeight = 670;
 
 const Sidebar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -112,7 +111,7 @@ const Sidebar = () => {
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: drawerWidth,
-            height: drawerHeight,
+            height: "calc(100vh - 32px)",
             padding: "16px",
             margin: "16px",
             borderRadius: "17px",
